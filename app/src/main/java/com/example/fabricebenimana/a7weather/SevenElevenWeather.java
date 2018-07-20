@@ -13,7 +13,7 @@ public class SevenElevenWeather extends Application {
 
     private static SevenElevenWeather instance;
 
-    private LatLng currentLocation = new LatLng(32.926514, -96.896115);
+    private LatLng currentLocation;
 
     public static SevenElevenWeather getInstance() {
         return instance;
