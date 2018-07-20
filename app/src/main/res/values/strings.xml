@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">7Weather</string>
+    <string name="Cancel">cancel</string>
+    <string name="Ok">ok</string>
+    <string name="settings">settings</string>
+    <string name="allow_location_access">allow location access</string>
+    <string name="unable_to_fetch_location">unable to fetch location</string>
+    <string name="location_permission_rationale">location permission rationale</string>
+    <string name="temperature_formatter">Temaperature %.2f˚</string>
+    <string name="min_temperature_formatter">Min: %.2f˚</string>
+    <string name="max_temperature_formatter">Max: %.2f˚</string>
+    <string name="temperature_wind">Wind %.2f KPH</string>
+    <string name="temperature_humidity">Humidity %d%%</string>
+    <string name="temperature_pressure">Pressure %.2f Pa</string>
+    <string name="min_temp_formatter">{fa-arrow-down 20dp} %.2f˚</string>
+    <string name="max_temp_formatter">{fa-arrow-up 20dp} %.2f˚</string>
+    <string name="clear">{fa-bolt 20dp}</string>
+    <string name="rain">{fa-umbrella 20dp}</string>
+    <string name="cloud">{fa-cloud 20dp}</string>
+
+</resources>

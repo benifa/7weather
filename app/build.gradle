@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+ext {
+    appcompatVersion = "27.1.1"
+    okhttp = '2.7.5'
+    retrofit = '2.1.0'
+    retrofitConverter = '2.0.2'
+    retrofitAdapter = '2.0.2'
+    eventBus= '3.0.0'
+    material='2.2.2'
+    playServices='15.0.1'
+    map_utils = '0.5'
+    butterknife = '8.4.0'
+
+}
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.example.fabricebenimana.a7weather"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "com.android.support:appcompat-v7:$appcompatVersion"
+    implementation "com.android.support:design:$appcompatVersion"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation "com.android.support:cardview-v7:$appcompatVersion"
+
+    implementation "com.squareup.okhttp:okhttp:$okhttp"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitConverter"
+    implementation "com.squareup.retrofit2:adapter-rxjava:$retrofitAdapter"
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+
+    implementation "com.joanzapata.iconify:android-iconify:$material"
+    implementation "com.joanzapata.iconify:android-iconify-material:$material"
+    implementation "com.joanzapata.iconify:android-iconify-fontawesome:$material"
+    implementation "org.greenrobot:eventbus:$eventBus"
+
+    implementation "com.google.android.gms:play-services-base:$playServices"
+    implementation "com.google.android.gms:play-services-location:$playServices"
+    implementation "com.google.android.gms:play-services-places:$playServices"
+    implementation "com.google.android.gms:play-services-maps:$playServices"
+
+    implementation "com.google.maps.android:android-maps-utils:$map_utils"
+
+    implementation "com.jakewharton:butterknife:$butterknife"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$butterknife"
+
+}
